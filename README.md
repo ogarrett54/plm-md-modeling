@@ -16,11 +16,9 @@ This work takes inspiration from two key papers:
 ### Pipeline Overview
 
 1. Input PDB file of the wild-type complex, specify which chain to mutate.
-2. Extract sequences and fix PDB file.
-3. Generate mutant sequences.
-4. Use PyRosetta to generate mutant structures for each sequence.
-5. Simulate each mutant structure using OpenMM for 100 ns.
-6. Calculate pairwise and residue-specific metrics using MDTraj and MDAnalysis.
+2. Use PyRosetta to generate mutant structures for each sequence.
+3. Simulate each mutant structure using OpenMM for 100 ns.
+4. Calculate pairwise and residue-specific metrics using MDTraj and MDAnalysis.
    - Pairwise
      - residue movement correlation
      - hydrogen bonds
@@ -34,5 +32,5 @@ This work takes inspiration from two key papers:
      - SASA
      - secondary structure
      - dihedral angles
-7. Train ESMDance architecture to predict each of these metrics from input sequences.
-8. Fine-tune pretrained model with a regression head to predict binding and/or immunogenecity.
+5. Train ESMDance architecture to predict each of these metrics from input sequences.
+6. Fine-tune pretrained model with a regression head to predict binding and/or immunogenecity.
