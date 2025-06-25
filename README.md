@@ -6,10 +6,11 @@ The purpose of this project is to train a model to predict biophysical metrics c
 
 ## Resources
 
-This work takes inspiration from two key papers:
+This work takes inspiration from three key papers:
 
 - [Learning Biophysical Dynamics with Protein Language Models](https://www.biorxiv.org/content/10.1101/2024.10.11.617911v3)
 - [Biophysics-based protein language models for protein engineering](https://www.biorxiv.org/content/10.1101/2024.03.15.585128v3)
+- [Quantified Dynamics-Property Relationships: Data-Efficient Protein Engineering with Machine Learning of Protein Dynamics](https://www.biorxiv.org/content/10.1101/2025.04.23.650227v1)
 
 ## Approach
 
@@ -33,4 +34,6 @@ This work takes inspiration from two key papers:
      - secondary structure
      - dihedral angles
 5. Train ESMDance architecture to predict each of these metrics from input sequences.
+   - Potentially also predict PyRosetta score
 6. Fine-tune pretrained model with a regression head to predict binding and/or immunogenecity.
+   - Can also try using multi-task prediction with step 5
