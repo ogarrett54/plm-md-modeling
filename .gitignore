@@ -4,3 +4,4 @@ md_sim/
 nma/
 models/
 pretrained_weights/
+yeast_data/
