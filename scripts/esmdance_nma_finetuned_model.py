@@ -6,7 +6,7 @@ from transformers import EsmModel
 from huggingface_hub import PyTorchModelHubMixin
 from scripts.nma_finetuned_config import config
 
-class ESMwrap(nn.Module, PyTorchModelHubMixin):
+class NMAFineTuned(nn.Module, PyTorchModelHubMixin):
     def __init__(self, esm2_select, model_select):
         super().__init__()
         # Load the ESM2 model

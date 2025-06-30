@@ -4,9 +4,6 @@ from torch import nn
 from transformers import EsmModel
 from huggingface_hub import PyTorchModelHubMixin
 
-esm2_select = 'model_35M'
-model_select='esmdance'
-
 class ESMwrap(nn.Module, PyTorchModelHubMixin):
     """
     A flexible ESMwrap class that takes its configuration as an argument
@@ -16,10 +13,10 @@ class ESMwrap(nn.Module, PyTorchModelHubMixin):
         super().__init__()
         # Store the passed config as an instance attribute
         self.config = model_config
+        self.freeze_esm = self.config['esmdance']['freeze_esm']
 
-        # --- CORRECTED SECTION ---
         # Load the ESM2 model directly from the config
-        self.esm2 = EsmModel.from_pretrained(self.config['model_id'])
+        self.esm2 = EsmModel.from_pretrained(self.config["model_35M"]["model_id"])
 
         # Freeze esm2 parameters if specified in the config
         if not self.config['esmdance']['freeze_esm']:
