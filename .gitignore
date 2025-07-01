@@ -1,7 +1,7 @@
-inputs/
-mutant_library/
-md_sim/
-nma/
-models/
-pretrained_weights/
-yeast_data/
+esmdance/inputs/
+esmdance/mutant_library/
+esmdance/md_sim/
+esmdance/nma/
+esmdance/models/
+esmdance/pretrained_weights/
+esmdance/yeast_data/
