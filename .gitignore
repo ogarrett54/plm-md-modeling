@@ -5,3 +5,7 @@ esmdance/nma/
 esmdance/models/
 esmdance/pretrained_weights/
 esmdance/yeast_data/
+metl/metl
+metl/metl-pretrained/
+metl/metl-sim/
+metl/01_finetune_metl_global/rosettafy_output
