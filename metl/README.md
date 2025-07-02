@@ -19,7 +19,8 @@
 1. Fine-tune Gelman et al., 2025 global model on Pikh1-AVR-PikC data
 2. Fine-tune ESM2 to predict system-specific Rosetta scores, then use this as a base model to fine-tune on Pikh1-AVR-PikC binding data
 3. Recreate Gelman et al., 2025 local model for Pikh1 HMA-AVR-PikC, then fine-tune on Pikh1-AVR-PikC yeast binding data.
-4. For each approach, fine-tune on varied amounts of binding data. Compare data efficiency with the equivalents using ESM2 only.
+4. Create a custom model which concatenates outputs from ESM2 and METL-Global backbones to make predictions.
+5. For each approach, fine-tune on varied amounts of binding data. Compare data efficiency with the equivalents using ESM2 only.
 
 ### Fine-tune Gelman et al., 2025 global model
 

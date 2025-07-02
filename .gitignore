@@ -8,4 +8,7 @@ esmdance/yeast_data/
 metl/metl
 metl/metl-pretrained/
 metl/metl-sim/
+metl/01_finetune_metl_global/output
+metl/01_finetune_metl_global/data
 metl/01_finetune_metl_global/rosettafy_output
+metl/01_finetune_metl_global/pikh1.tsv
